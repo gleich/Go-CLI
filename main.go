@@ -1,17 +1,7 @@
 package main
 
-import (
-	"github.com/fatih/color"
-	"github.com/urfave/cli"
-)
-
-var (
-	red = color.New(color.FgRed)
-)
+import "github.com/Matt-Gleich/go-cli/cmd"
 
 func main() {
-	cliApp := cli.NewApp()
-	cliApp.Name = "go-cli"
-	cliApp.Usage = "Simple math quizzes"
-	cliApp.Version = "0.1.0"
+	cmd.Execute()
 }
